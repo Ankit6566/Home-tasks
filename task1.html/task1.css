@@ -1,0 +1,145 @@
+body{
+    margin:0;
+    font-family:  'Courier New', Courier, monospace;
+}
+header{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+   background-color:darkslateblue;
+   width: 100%;
+   height:85px;
+}
+#newsBlogger
+{    color: darkslateblue;
+    text-align: center;
+    padding-top:12px ;
+    height:50px;
+    width:200px;
+    background-color:white;
+    border:1px solid orange ;
+}
+#newsBlogger h2,#newsBlogger h6{
+padding :0;
+margin :0;
+}
+.main-content{
+    width: 95%;
+    margin:15px auto 15px auto;
+}
+#top-menu{
+    display:flex;
+    align-items: center;flex-direction: row;
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+}
+
+
+#category-container{
+    width: 265px;
+}
+#subscribe-container{
+    width:265px;
+}
+#category{
+    width: 170px;
+    height: 30px;
+}
+#subscribe{
+    padding-left:12px ;
+    height: 30px;
+    width:165px;
+}
+#top-menu h2{
+    color: darkslateblue;
+}
+#subscribe-btn{
+    width:80px;
+    height: 36px;
+    margin-left: -10px;
+    background-color:black;
+    color:white;
+    border-width: 0;
+}
+#blog-container{
+    display: flex;
+    width: 100%;
+    height: 150px;
+}
+#blog-image{
+    height: 150px;
+    background-color: grey;   
+    width: 150px;
+}
+
+#blog-content{
+    width: 60%;
+    margin-left: 10px;
+    position: relative;
+}
+#blog-content h3,#blog-content h4{
+
+    margin: 0;
+}
+#blog-content p{
+    height: 57px;
+    overflow: hidden;
+}
+#blog-content #continue-btn{
+    position:absolute;
+    bottom: 0;
+    background-color: orangered;
+    color: white;
+    height:  35px;
+    width: 150px;
+    border-width: 0;
+}
+#blog-content h5{
+    margin:0;
+}
+@media screen and (max-width: 700px){
+    
+    #top-menu h2{
+        order: 1;
+    }
+    #category-container{
+        order: 2;
+        text-align: center;
+    }
+    #subscribe-container{
+        order:3;
+    }
+    #top-menu{
+        flex-direction: column;
+        height: 170px;
+    }
+    #blog-container{
+        height: 320px; 
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #blog-content{
+        height: 175px;
+    }
+    #blog-content p{
+        height: 70px;
+    }
+}
+.divider{
+    background-color: rgb(212, 212, 212);
+     height: 1px;
+    margin: 10px 20px 10px 20px;
+}
+footer{
+    background-color: darkslateblue;
+    color: white;
+    position:relative;
+    height: 30px;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}

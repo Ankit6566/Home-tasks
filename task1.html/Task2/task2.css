@@ -1,0 +1,51 @@
+section{
+    margin:5px 5px 5px 5px;
+  
+}
+.chess-board{
+    width: 55%;
+    margin:auto;
+
+    height: 720px;
+    border: solid 10px rgb(75, 73, 73);
+    background-color: black;
+}
+.white{
+    font-size: 50px;
+    text-align: center;
+    width: 12.5%;
+    height: 90px;
+    background-color:white;
+    float:left;
+}
+.black{
+    width: 12.5%;
+    height: 90px;
+    background-color:grey;
+    text-align: center;
+    font-size: 50px;
+    float:left;
+}
+@media screen and (max-width: 700px){
+    
+    .chess-board{
+        width: 457px;
+        margin-left: auto;
+        height: 457px;
+       
+    }
+    .black{
+        width:57px;
+        justify-content: center;
+        text-align: center;
+        height: 57px;
+        
+    }
+    .white{
+        justify-content: center;
+        text-align: center;
+        width: 57px;
+        height: 57px;
+ 
+    }
+}
