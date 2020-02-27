@@ -21,6 +21,14 @@ function check()
 {
 if(index==-1){
  index=2;
- console.log(array);
- return Math.floor(eval(array.join("")));}
+ if(array[1]=='+')
+ return array[0]+array[2];
+ if(array[1]=='-')
+ return array[0]-array[2];
+ if(array[1]=='*')
+ return array[0]*array[2];
+ if(array[1]=='/')
+ return Math.floor(array[0]/array[2]);
+
+}
  }
