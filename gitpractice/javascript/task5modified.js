@@ -1,14 +1,14 @@
-function zero(param) {
-    return param ? param(0) : 0;
+function zero(parameter) {
+    return parameter ? parameter(0) : 0;
   }
-  function one(param) {
-    return param ? param(1) : 1;
+  function one(parameter) {
+    return parameter ? parameter(1) : 1;
   }
-  function two(param) {
-    return param ? param(2) : 2;
+  function two(parameter) {
+    return parameter ? parameter(2) : 2;
   }
-  function three(param) {
-    return param ? param(3) : 3;
+  function three(parameter) {
+    return parameter ? parameter(3) : 3;
   }
   function four(param) {
     return param ? param(4) : 4;

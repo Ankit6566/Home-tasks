@@ -1,7 +1,6 @@
 /*http://www.codewars.com/kata/get-the-middle-character*/
-function getMiddle(s) {
-
-        var array = Array.from(s);
+function getMiddle(str) {
+        var array = Array.from(str);
         var result = "";
         var arrayLength = array.length;
         if (arrayLength % 2 === 0) {
