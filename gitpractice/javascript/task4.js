@@ -1,13 +1,14 @@
 /*http://www.codewars.com/kata/transportation-on-vacation*/
 function rentalCarCost(d) {
-    var total=40*d;
-      if(d>=7)
-      total-=50;
-      else if(d>=3)
-      total-=20;
-      return total;
-      
-      
-      
-      
-    }
+  var days = d;
+  var totalCost = 40 * days;
+
+  if (days >= 7) {
+    totalCost -= 50;
+  } else if (days >= 3) {
+    totalCost -= 20;
+  }
+
+  return totalCost;
+
+}
