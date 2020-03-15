@@ -1,3 +1,4 @@
+/*http://www.codewars.com/kata/extract-nested-object-reference*/
 Object.prototype.hash = function(string) {
     var array = string.split(".");
     let myobject = obj;

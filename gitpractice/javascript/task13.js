@@ -1,3 +1,4 @@
+/*http://www.codewars.com/kata/array-helpers*/
 Array.prototype.sum = function() { return this.reduce((sum, curr) => sum += curr, 0) }
 Array.prototype.square = function() { return this.map(x => x * x) }
 Array.prototype.cube = function() { return this.map(x => x * x * x) }
