@@ -1,7 +1,7 @@
 /*http://www.codewars.com/kata/using-closures-to-share-class-state*/
-var avweight = 0;
-var c = 0;
-var Cat = function(name, weight) {
+let avweight = 0;
+let c = 0;
+let Cat = function(name, weight) {
 
     if (name == undefined || weight == undefined) {
         console.log("kuch bhi");

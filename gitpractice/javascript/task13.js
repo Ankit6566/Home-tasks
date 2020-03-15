@@ -6,20 +6,12 @@ Array.prototype.average = function() { return (this.reduce((sum, curr) => sum +=
 Array.prototype.even = function() {
     array = [];
     console.log(this[0])
-    this.forEach((x) => { if (x % 2 == 0) array.push(x) });
-    //  (let i = 0; i < this.length; i++) {
-    //     if (this[i] % 2 == 0)
-    //         array.push(this[i])
-    // }
+    array = this.filter((value) => (value % 2 == 0));
     return array;
 }
 Array.prototype.odd = function() {
     array = [];
     console.log(this[0])
-    this.forEach(x => { if (x % 2 != 0) array.push(x) });
-    // for (let i = 0; i < this.length; i++) {
-    //     if (this[i] % 2 != 0)
-    //         array.push(this[i])
-    // }
+    array = this.filter((value) => (value % 2 != 0));
     return array;
 }

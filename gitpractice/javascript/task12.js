@@ -2,10 +2,12 @@
 function createSecretHolder(secret) {
 
     return {
-      Secret:secret,
-      getSecret:function(){
-        return this.Secret;},
-     setSecret:function(secret){
-     this.Secret=secret;}
+        Secret: secret,
+        getSecret: function() {
+            return this.Secret;
+        },
+        setSecret: function(secret) {
+            this.Secret = secret;
+        }
     }
 }
