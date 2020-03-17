@@ -18,9 +18,9 @@ function cache(func) {
             return tempobj[temp];
         } else {
             arr.push(temp);
-            let resu = func(obj1, obj2);
-            tempobj[temp] = resu;
-            return resu;
+            let result = func(obj1, obj2);
+            tempobj[temp] = result;
+            return result;
         }
     }
 }
