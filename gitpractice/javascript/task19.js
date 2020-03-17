@@ -3,7 +3,7 @@ function cache(func) {
     let tempobj = {};
     var arr = [];
     return function(obj1, obj2) {
-        if (obj1 == undefined && obj2 == undefined) {
+        if (obj1 === undefined && obj2 === undefined) {
 
             if (!arr.includes("undef")) {
                 arr.push("undef");
