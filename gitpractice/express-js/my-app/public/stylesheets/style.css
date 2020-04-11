@@ -1,0 +1,22 @@
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+a {
+    color: #00B7FF;
+}
+
+h1 {
+    justify-content: center;
+    text-align: center;
+    color: blue;
+}
+
+#user-button {
+    text-align: center;
+    justify-content: center;
+    background-color: green;
+    color: black;
+}
