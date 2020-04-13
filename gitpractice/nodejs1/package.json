@@ -1,0 +1,22 @@
+{
+    "name": "demo-pkg",
+    "version": "1.0.0",
+    "description": "this is for demo",
+    "main": "node.js",
+    "scripts": {
+        "ankit": "node node.js",
+        "start": "nodemon node server.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "nodejs.demo"
+    ],
+    "author": "ankit",
+    "license": "MIT",
+    "dependencies": {
+        "minimist": "^1.2.5"
+    },
+    "devDependencies": {
+        "colors": "^1.4.0"
+    }
+}
