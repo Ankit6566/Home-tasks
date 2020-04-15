@@ -5,10 +5,8 @@ var nextBtn = document.querySelector("#next-btn");
 var previousBtn = document.querySelector("#previous-btn");
 let page = document.querySelector("#page-content");
 let counter = 0;
-let array;
 let limit = 4;
 let start = 0;
-var c = 0;
 searchBtn.addEventListener('click', event => {
     var keyword = searchBox.value;
     if (keyword == 0) {
@@ -22,7 +20,7 @@ searchBtn.addEventListener('click', event => {
         }).then(result => {
             counter = 0;
             start = 0;
-            c++;
+
             console.log(result);
             data = result.items;
             showDetails(data);
@@ -39,17 +37,17 @@ function displayDetails(data) {
     page.innerHTML = "";
     start += counter;
     counter = 0;
-    for (let i = start; i < start + limit && i < 15; i++) {
+    for (let iterator = start; iterator < start + limit && iterator < 15; iterator++) {
         counter++;
-        domElements(data, i);
+        domElements(data, iterator);
     }
 }
 
-function domElements(data, i) {
+function domElements(data, iterator) {
     let card1 = document.createElement("div")
     card1.classList.add("card");
     let img = document.createElement("img");
-    img.setAttribute("src", data[i].snippet.thumbnails.high.url);
+    img.setAttribute("src", data[iterator].snippet.thumbnails.high.url);
     img.setAttribute("width", "100%");
     img.setAttribute("height", "280");
     img.setAttribute("alt", "thumbnails");
@@ -58,12 +56,12 @@ function domElements(data, i) {
     container.classList.add("container");
     let h1 = document.createElement("h1");
     let h4 = document.createElement("h4");
-    h1.innerHTML = data[i].snippet.title;
-    h4.innerHTML = data[i].snippet.publishedAt;
+    h1.innerHTML = data[iterator].snippet.title;
+    h4.innerHTML = data[iterator].snippet.publishedAt;
     container.appendChild(h1);
     container.appendChild(h4);
     let p = document.createElement("p");
-    p.innerHTML = data[i].snippet.description;
+    p.innerHTML = data[iterator].snippet.description;
     container.appendChild(p);
     card1.appendChild(container);
     let pagecontent = document.querySelector("#page-content");
@@ -77,9 +75,9 @@ previousBtn.addEventListener('click', event => {
     page.innerHTML = "";
     start -= limit;
     counter = 0;
-    for (let i = start; i < start + limit; i++) {
+    for (let iterator = start; iterator < start + limit; iterator++) {
         counter++;
-        domElements(data, i);
+        domElements(data, iterator);
     }
 
 })
