@@ -1,0 +1,35 @@
+<div class="card">
+    <div class="card-body">
+        <h2 class="card-title">{{ user.firstName }} {{ user.lastName }}</h2>
+        <p *ngIf="user.isDeleted" [ngClass]="{ 'text-danger': user.isDeleted }">
+            Deleted
+        </p>
+        <p *ngIf="!user.isDeleted" [ngClass]="{ 'text-success': !user.isDeleted }">
+            Active
+        </p>
+        <div class="container">
+            <div class="row ">
+                <h3>Login ID</h3>
+                <h3>{{ user.id }}</h3>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row ">
+                <p>First Name:</p>
+                <p>{{ user.firstName }}</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row ">
+                <p>Last Name:</p>
+                <p>{{ user.lastName }}</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row ">
+                <p>Age:</p>
+                <p>{{ user.age }}</p>
+            </div>
+        </div>
+    </div>
+</div>

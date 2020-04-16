@@ -1,0 +1,15 @@
+<div class="card border" [ngClass]="{'border-success': !user.isDeleted, 'border-danger': user.isDeleted}">
+    <div class="card-body ">
+        <p>{{ user.firstName }} {{ user.lastName }}</p>
+        <div *ngIf="module === 'active'" class="row" (click)="delete()">
+            <button class="btn btn-danger">Deactivate</button>
+        </div>
+        <div *ngIf="module === 'deleted'" class="row" (click)="active()">
+            <button class="btn btn-success">Activate</button>
+        </div>
+        <div *ngIf="module === 'manage'" class="row">
+            <button class="btn-outline-secondary" [routerLink]="['details', user.id]">
+        Details
+      </button>
+        </div>
+    </div>
