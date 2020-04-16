@@ -1,0 +1,19 @@
+<app-user></app-user>
+<div appAttributeDirective>
+    hi
+</div>
+<div *ngIf=" ngDestroyDemoVariable" (click)="ngDestroyDemoVariable = !ngDestroyDemoVariable">
+    <h3>ngOnDestory gets called after this element click and the component gets destroyed</h3>
+</div>
+
+<!-- <app-databindingdemo some="input text"></app-databindingdemo>
+<app-databindingdemo [some]="input">
+</app-databindingdemo>
+<app-databindingdemo some={{input}}></app-databindingdemo> -->
+<!-- <div>this is coming from outside</div>
+<app-outputdemo (somethingChanged)="somethingHandler($event)">
+</app-outputdemo>
+<div>
+    hiis 
+    {{Outputdemo}}
+</div> -->
