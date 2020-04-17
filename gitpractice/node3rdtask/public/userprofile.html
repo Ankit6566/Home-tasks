@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="stylesheets/style.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="javascripts/user-data.js"></script>
+    <header>
+        <div id="top">
+            <img id="img" src="images/Capture.PNG" alt="" style="width: 60px; height: 60px;">
+            <a href="/"><button id="login">signout</button></a>
+            <button onclick="myfunction()" id="btn-show">show user-details</button>
+        </div>
+    </header>
+    <div id="middle">
+        <form action="/api/user/posts/new" method="post">
+            <input type="text" id="Tpost" name="posttext" placeholder="type post">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div id="content">
+
+    </div>
+
+
+</body>
+
+</html>
