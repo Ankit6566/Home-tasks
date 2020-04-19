@@ -1,0 +1,28 @@
+#top {
+    background-color: rgb(white, 104, 202);
+    height: 80px;
+    text-align: center;
+    margin: auto;
+}
+
+#img {
+    float: left;
+    padding: 10px;
+}
+
+#login {
+    margin: 25px;
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+#content {
+    background-color: rgba(102, 86, 86, 0.212);
+    margin: auto;
+    width: 60%;
+    border: 3px solid #73AD21;
+    padding: 130px;
+    text-align: center;
+}

@@ -1,0 +1,33 @@
+#top {
+    background-color: rgb(white, 104, 202);
+    height: 80px;
+    text-align: center;
+    margin: auto;
+}
+
+#img {
+    float: left;
+    padding: 10px;
+}
+
+#login {
+    float: right;
+    margin: 25px;
+    padding: 5px 10px;
+    background-color: red;
+    color: white;
+}
+
+#content {
+    margin-top: 20px;
+    height: 400px;
+    width: 100%;
+    background-color: rgba(102, 86, 86, 0.212);
+}
+
+#middle {
+    margin-top: 30px;
+    height: 50px;
+    background-color: green;
+    text-align: center;
+}

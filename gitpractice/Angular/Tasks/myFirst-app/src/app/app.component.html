@@ -1,19 +1,19 @@
 <app-user></app-user>
 <div appAttributeDirective>
-    hi
+    hi im getting this property from appAttributeDirective
 </div>
 <div *ngIf=" ngDestroyDemoVariable" (click)="ngDestroyDemoVariable = !ngDestroyDemoVariable">
     <h3>ngOnDestory gets called after this element click and the component gets destroyed</h3>
 </div>
-
-<!-- <app-databindingdemo some="input text"></app-databindingdemo>
-<app-databindingdemo [some]="input">
-</app-databindingdemo>
-<app-databindingdemo some={{input}}></app-databindingdemo> -->
-<!-- <div>this is coming from outside</div>
+<div class="col">
+    <app-databindingdemo some="input text"></app-databindingdemo>
+    <app-databindingdemo [some]="input">
+    </app-databindingdemo>
+    <app-databindingdemo some={{input}}></app-databindingdemo>
+</div>
+<h1>this is coming from outside</h1>
 <app-outputdemo (somethingChanged)="somethingHandler($event)">
 </app-outputdemo>
-<div>
-    hiis 
+<div class="row">
     {{Outputdemo}}
-</div> -->
+</div>
