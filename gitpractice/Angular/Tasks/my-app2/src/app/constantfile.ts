@@ -17,6 +17,7 @@
     export const B_DETAILS='details';
      export const USER_ACTIVE='active';
      export const USER_DELETE='deleted';
+     export const PASSWORD = 'password';
 
 
 

@@ -4,4 +4,5 @@ export interface User{
      lastName: string;
      age: Number;
     isDeleted:boolean;
+    password:string;
 };
