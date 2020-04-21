@@ -1,0 +1,45 @@
+<div class="card">
+    <div class="card-body">
+        <h2 class="card-title">{{ user | userFullname | titlecase}}</h2>
+        <p [ngClass]="{ 'text-danger': user?.isDeleted,'text-success': !user?.isDeleted}">
+            {{user.isDeleted | userStatus}}
+        </p>
+        <div class="container">
+            <div class="row ">
+                <h3>{{constants.H3_LOGINID}}</h3>
+                <h3>{{ user.id }}</h3>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row ">
+                <p>{{constants.P_FNAME}}</p>
+                <p>{{ user.firstName }}</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row ">
+                <p>{{constants.P_LNAME}}</p>
+                <p>{{ user.lastName }}</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row ">
+                <p>{{constants.P_AGE}}</p>
+                <p>{{ user.age }}</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row ">
+                <p>{{constants.TEXT_PASSWORD}}</p>
+                <p>{{user.password}}</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row ">
+                <h3>{{constants.UPDATED_AT}}</h3>
+                <h3>{{ user.updatedAt |date:"MM/ d /y"}}</h3>
+            </div>
+        </div>
+
+    </div>
+</div>

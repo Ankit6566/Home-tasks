@@ -1,0 +1,19 @@
+<div class="conatiner">
+    <div class="navbar">
+        <div>
+            <a class="nav-link" routerLink="" routerLinkActive="active">{{constants.HOMELINK}}</a>
+        </div>
+        <div>
+            <a class="nav-link" routerLinkActive="active" routerLink="/active">{{constants.ACTIVELINK}}</a>
+        </div>
+        <div>
+            <a class="nav-link" routerLinkActive="active" routerLink="/deleted">{{constants.DELETELINK}}</a>
+        </div>
+        <div>
+            <a class="nav-link" routerLinkActive="active" routerLink="/manage">{{constants.MANAGELINK}}</a>
+        </div>
+    </div>
+    <hr>
+    <hr>
+    <router-outlet></router-outlet>
+</div>
