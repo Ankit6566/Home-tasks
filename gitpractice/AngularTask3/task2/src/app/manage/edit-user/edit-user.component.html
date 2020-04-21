@@ -1,0 +1,23 @@
+<h3>Edit details for {{user|userFullname|titlecase}}</h3>
+<form [formGroup]="EditForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        {{constants.TEXT_PASSWORD}}
+        <input type="password" id="password" class="form-control" formControlName="password" />
+        <p *ngIf="EditForm.get('password').touched && EditForm?.get('password')?.errors?.required " class="text-danger">
+            {{constants.WARN_USER_PASSWORD}}
+        </p>
+        <p *ngIf="EditForm?.get('password').errors?.minlength" class="text-danger">
+            {{constants.WARN_USER_PASSWORD_LENGTH}}
+        </p>
+    </div>
+    <div class="form-group">
+        {{constants.P_AGE}}
+        <input type="text" id="age" class="form-control" formControlName="age" />
+        <p *ngIf="EditForm.get('age').touched && EditForm?.get('age')?.errors?.required " class="text-danger">
+            {{constants.WARN_USER_AGE}}
+        </p>
+    </div>
+    <button type="submit" class="btn btn-primary" [disabled]="!EditForm.valid">
+      {{constants.B_SUBMIT}}
+    </button>
+</form>

@@ -1,0 +1,16 @@
+<div class="card border" [ngClass]="{'border-success': !user.isDeleted, 'border-danger': user.isDeleted}">
+    <div class="card-body ">
+        <p>{{ user.firstName }} {{ user.lastName }}</p>
+        <div *ngIf="module === 'active'" class="row" (click)="delete()">
+            <button class="btn btn-danger">{{constants.B_DEACTIVATE}}</button>
+        </div>
+        <div *ngIf="module === 'deleted'" class="row" (click)="active()">
+            <button class="btn btn-success">{{constants.B_ACTIVATE}}</button>
+        </div>
+        <div class="container">
+            <div *ngIf="module === 'manage'" class="row">
+                <button class="btn-outline-secondary" [routerLink]="['details', user.id]">{{constants.B_DETAILS}}</button>
+                <button class="btn btn-warning" [routerLink]="['edit', user.id]">{{constants.B_EDIT}}</button>
+            </div>
+        </div>
+    </div>

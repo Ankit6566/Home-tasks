@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="container">
+        <div class="row justify-content-end mb-3">
+            <button class="btn btn-success" routerLink="createuser">Create</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <app-user-list [module]="'manage'"></app-user-list>
+        </div>
+        <div class="col">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
